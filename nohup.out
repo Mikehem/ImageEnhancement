@@ -1,0 +1,45 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://79.137.67.195:8502
+  External URL: http://79.137.67.195:8502
+
+2020-11-13 09:24:57.330793: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-11-13 09:25:01.797 From /home/MD00560695/.conda/envs/RetinaNext/lib/python3.6/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2020-11-13 09:25:01.832267: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-11-13 09:25:01.932759: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-11-13 09:25:01.932872: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: master-node
+2020-11-13 09:25:01.932883: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: master-node
+2020-11-13 09:25:01.948450: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.23.5
+2020-11-13 09:25:01.948570: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.23.5
+2020-11-13 09:25:01.948579: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.23.5
+2020-11-13 09:25:01.949311: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-11-13 09:25:02.049833: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3200085000 Hz
+2020-11-13 09:25:02.053629: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f6512bff280 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-13 09:25:02.053744: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-13 09:25:02.084 From /home/MD00560695/workdir/RetinexNet/model.py:22: conv2d (from tensorflow.python.keras.legacy_tf_layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+2020-11-13 09:25:02.110 From /home/MD00560695/.conda/envs/RetinaNext/lib/python3.6/site-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-11-13 09:25:02.484 From /home/MD00560695/workdir/RetinexNet/model.py:119: average_pooling2d (from tensorflow.python.keras.legacy_tf_layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.AveragePooling2D instead.
+2020-11-16 01:06:48.252 Restoring parameters from ./model/Decom/RetinexNet-tensorflow
+2020-11-16 01:06:48.516 Restoring parameters from ./model/Relight/RetinexNet-tensorflow
+2020-11-16 01:07:37.711 Restoring parameters from ./model/Decom/RetinexNet-tensorflow
+2020-11-16 01:07:37.751 Restoring parameters from ./model/Relight/RetinexNet-tensorflow
+2020-11-16 01:08:09.055 Restoring parameters from ./model/Decom/RetinexNet-tensorflow
+2020-11-16 01:08:09.088 Restoring parameters from ./model/Relight/RetinexNet-tensorflow
+2020-11-16 03:44:03.409 Restoring parameters from ./model/Decom/RetinexNet-tensorflow
+2020-11-16 03:44:03.618 Restoring parameters from ./model/Relight/RetinexNet-tensorflow
+2020-11-18 05:17:54.325 Restoring parameters from ./model/Decom/RetinexNet-tensorflow
+2020-11-18 05:17:54.483 Restoring parameters from ./model/Relight/RetinexNet-tensorflow
+2020-11-18 06:53:44.722 From /home/MD00560695/.conda/envs/RetinaNext/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2020-11-18 07:19:38.802 Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
