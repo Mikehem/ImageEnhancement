@@ -16,8 +16,8 @@ from PIL import Image
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 import time
-from model import lowlight_enhance
-from utils import *
+from retinex.model import lowlight_enhance
+from retinex.utils import *
 
 
 from pylab import *
