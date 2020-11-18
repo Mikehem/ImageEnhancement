@@ -3,11 +3,10 @@
 1. RetinexNet deep learning model (TF) Decomposition for Low-Light Enhancement - (project)[https://arxiv.org/abs/1808.04560] (Project Page)[https://daooshee.github.io/BMVC2018website/]
 2. OpenCV based Decomposition for Glare Enhancement.
 
-The basic procedure consists of 3 steps:
-
-    Decompose the original image into a color, saturation and brightness component.
-    Find particularly bright areas in the image.
-    Inpaint these ares with the surrounding pixels.
+> The basic procedure consists of 3 steps:  
+>1. Decompose the original image into a color, saturation and brightness component.
+>2. Find particularly bright areas in the image.
+>3. Inpaint these ares with the surrounding pixels.
 
 3. Deblur GAN (keras) implementation for Blur Enhancement. (article)[https://www.sicara.ai/blog/2018-03-20-GAN-with-Keras-application-to-image-deblurring]
 
