@@ -22,11 +22,17 @@ from retinex.utils import *
 
 from pylab import *
 import cv2
+from pathlib import Path
 #-----------------------------------------
 from deblurgan.model import generator_model
 from deblurgan.utils import load_image, deprocess_image, preprocess_image
 #-----------------------------------------
 dblur_weight_path = os.path.join(BASE_PATH, "model/deblurGan", "generator.h5")
+
+def read_markdown_file(markdown_file):
+    return Path(markdown_file).read_text()
+
+intro_markdown = read_markdown_file(os.path.join(BASE_PATH,"README.md"))
 
 def lowlight_test(lowlight_enhance, img):
     test_low_data = []
@@ -148,26 +154,21 @@ def DeBlur_GAN_Decomposition():
             time.sleep(10)
                 
 def main():
-    st.title("Image pre-processing for image enhancement")
-    #
-    #os.environ["CUDA_VISIBLE_DEVICES"] = '2'
-    #gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5)
-    #with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
+    #st.title("Image pre-processing for image enhancement")
     st.sidebar.title("Which Pre Processing Model to run")
     app_mode = st.sidebar.selectbox("Choose the model mode",
         ["Image Enhancement & Preprocessing", "Retinex Decomposition", "OpenCV Glare Removal", "DL Blur Removal"])
     if app_mode == "Image Enhancement & Preprocessing":
-        st.sidebar.success('To continue select "Run the app".')
+        st.sidebar.success('To continue select the enhancement technique.')
+        st.markdown(intro_markdown, unsafe_allow_html=True)
     elif app_mode == "Retinex Decomposition":
         result_load = Retinex_Decomposition()
     elif app_mode == "OpenCV Glare Removal":
-        #st.sidebar.warning("Resnet model functionality still in progress.")
         result_load = OpenCV_Glare_Decomposition()
     elif app_mode == "DL Blur Removal":
-        #st.sidebar.warning("Resnet model functionality still in progress.")
         result_load = DeBlur_GAN_Decomposition()
     else:
-        st.sidebar.success('To continue select the "Model".')
+        st.sidebar.success('To continue select the enhancement technique.')
         st.markdown(intro_markdown, unsafe_allow_html=True)
 
 
